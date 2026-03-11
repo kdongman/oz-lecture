@@ -1,0 +1,60 @@
+body {
+  max-width: 80vw;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+header {
+  padding: 2rem;
+  border-bottom: 0.2rem solid;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+#posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.post {
+  padding: 1.5rem;
+  border: 0.2rem solid;
+}
+aside {
+  width: 25vw;
+  padding: 1.5rem;
+  margin-right: 2vw;
+  font-size: 1em;
+}
+footer {
+  padding: 1.5rem;
+  border-top: 0.2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin: 2vw;
+}
+/* 미디어 쿼리 태블릿 최대 1023px */
+@media screen and (max-width: 1023px) {
+  body {
+    max-width: 90vw;
+  }
+  #post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+  aside {
+    width: 100%;
+    gap: 1rem;
+  }
+}
